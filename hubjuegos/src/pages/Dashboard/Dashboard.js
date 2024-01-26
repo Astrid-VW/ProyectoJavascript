@@ -9,7 +9,7 @@ const template = () => `
       <li>
         <figure id="navigatePokemon">
           <img
-            src="../../../public/pokebola.png/"
+            src="./pokebola.png"
             alt="go to page pokemon"
           />
           <h2>POKEMON</h2>
@@ -18,7 +18,7 @@ const template = () => `
       <li>
         <figure>
           <img
-            src="../../../public/whack-a-mole.png/"
+            src="./whack-a-mole.png"
             alt=" go to wacka topo game"
           />
           <h2>WACKA TOPO</h2>
@@ -27,7 +27,7 @@ const template = () => `
       <li>
         <figure>
           <img
-            src="../../../public/memory-game.png/"
+            src="./memory-game.png"
             alt="go to memory game"
           />
           <h2>MEMORY GAME</h2>
