@@ -8,7 +8,7 @@ import "./Header.css";
 
 const template = () => `
   <img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679162/header_giqdug.jpg"
+    src="../../../public/logo_ovni.png"
     alt="title hub game website (app)"
     class="logo"
   />

@@ -18,3 +18,7 @@ export const initTemplate = () => {
   PrintTemplateHeader();
   PrintTemplateFooter();
 };
+
+//-----------------------------------------------------------------------------------
+
+import { getUser } from "../global/state/globalstate";
