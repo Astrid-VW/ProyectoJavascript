@@ -1,6 +1,6 @@
 //Login.js ----> src/pages/Login/Login.js
 
-import { setUser, setUserData } from "../../global/state/globalstate";
+import { setUser, setUserData } from "../../global/state/globalState";
 import { initControler } from "../../utils/route";
 import "./Login.css";
 const template = () => `
@@ -67,6 +67,7 @@ const addListeners = () => {
 export const Login = () => {
   /** cuando pintamos el login hay que ocultar la nav con sus navegaciones */
   document.querySelector("nav").style.display = "none";
+  document.querySelector("#buttonDashboard").style.display = "none";
   document.querySelector("main").innerHTML = template();
   addListeners();
 };

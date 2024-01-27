@@ -13,22 +13,17 @@ import "./Header.css";
 const template = () => `
   <img
     src="../../../public/logo_ovni.png"
-    alt="title hub game website (app)"
-    class="logo"
+    alt=" navigate to home app"
+    id="buttonDashboard" class="logo"
   />
   <nav>
     <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png"
+      src="./randomColor.png"
       alt=" change to style mode page"
       id="changeColor"
     />
     <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682685633/home_nekvs0.png"
-      alt=" navigate to home app"
-      id="buttonDashboard"
-    />
-    <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679055/logout_arz0gw.png"
+      src="./logOut.png"
       alt="logout"
       id="buttonLogout"
     />

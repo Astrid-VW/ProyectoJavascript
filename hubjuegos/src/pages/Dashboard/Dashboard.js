@@ -2,6 +2,7 @@
 
 import { initControler } from "../../utils";
 import "./Dashboard.css";
+import { getInfo } from "../../utils/dataPokemon";
 
 const template = () => `
   <div id="containerDashboard">
@@ -45,7 +46,12 @@ const addEventListeners = () => {
   navigatePokemon.addEventListener("click", () => {
     initControler("Pokemon");
   });
+  const navigateMemory = document.getElementById("navigateMemoryGame");
+  navigateMemory.addEventListener("click", () => {
+  initControler("MemoryGame");
+});
 };
+
 
 export const printTemplateDashboard = () => {
   /** Como siempre las paginas se renderizan en el main por lo cual inyectamos el template en el contenedor del main */
@@ -57,3 +63,11 @@ export const printTemplateDashboard = () => {
   /** metemos los escuchadores de la pagina */
   addEventListeners();
 };
+
+  /** y por ultimo traemos la info que hace la llamada asincrona a la api de pokemon y lo setea en el estado
+   */
+//--------------------------------------------- LO NUEVO -------------------------
+getInfo();
+//---------------------------------------------------------------------------------
+
+
