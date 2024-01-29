@@ -1,3 +1,7 @@
+import { getUser } from "../global/state/globalState";
+import { Login, PrintPokemonPage, printTemplateDashboard, AhorcadoPage } from "../pages";
+
+
 export const initControler = (pagesRender) => {
   
     switch (pagesRender) {
@@ -16,12 +20,11 @@ export const initControler = (pagesRender) => {
       case "Login":
         Login();
         break;
-      case "Memory":
-        "PrintMemoryPage()";
-        break;
+      case "ahorcadoGame":
+        AhorcadoPage();
+        break; 
     }
   };
 
   // route.js ---> utils/route.js
-import { getUser } from "../global/state/globalState";
-import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
+

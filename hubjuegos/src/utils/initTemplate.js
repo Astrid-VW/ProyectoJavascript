@@ -10,7 +10,7 @@ export const initTemplate = () => {
   const main = document.createElement("main");
   const footer = document.createElement("footer");
 
-  //? -------> inyectamos os elementos en el contenedor de la app
+  //? -------> inyectamos los elementos en el contenedor de la app
 
   app.append(header, main, footer);
 
@@ -18,7 +18,3 @@ export const initTemplate = () => {
   PrintTemplateHeader();
   PrintTemplateFooter();
 };
-
-//-----------------------------------------------------------------------------------
-
-import { getUser } from "../global/state/globalstate";

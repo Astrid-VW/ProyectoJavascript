@@ -17,16 +17,16 @@ const template = () => `
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="ahorcado">
           <img
-            src="./whack-a-mole.png"
-            alt=" go to wacka topo game"
+            src="./hangman.png"
+            alt=" go to ahorcado game"
           />
-          <h2>WACKA TOPO</h2>
+          <h2>AHORCADO</h2>
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="navigateMemoryGame">
           <img
             src="./memory-game.png"
             alt="go to memory game"
@@ -48,12 +48,18 @@ const addEventListeners = () => {
   });
   const navigateMemory = document.getElementById("navigateMemoryGame");
   navigateMemory.addEventListener("click", () => {
-  initControler("MemoryGame");
+  initControler("memoryGame");
+  })
+  const navigateAhorcado = document.getElementById("ahorcado");
+  navigateAhorcado.addEventListener("click", () => {
+  initControler("ahorcadoGame");
 });
 };
 
 
 export const printTemplateDashboard = () => {
+  document.querySelector("nav").style.display = "flex";
+  document.querySelector(".logo").style.display = "flex";
   /** Como siempre las paginas se renderizan en el main por lo cual inyectamos el template en el contenedor del main */
   document.querySelector("main").innerHTML = template();
 

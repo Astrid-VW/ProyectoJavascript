@@ -19,7 +19,6 @@ const currentUser = {
 
   const dataGlobal = {
     pokemon: [],
-    ricky: [],
   };
   
   //------------------SET y GET de currentUser ----------------
