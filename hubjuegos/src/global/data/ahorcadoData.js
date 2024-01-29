@@ -2,5 +2,10 @@ export const palabras = [
     "botella",
     "capricornio",
     "estilo",
-    "parametro"
+    "parametro",
+    "caballero",
+    "salmuera",
+    "troquel",
+    "avellano",
+    "relamer"
 ]

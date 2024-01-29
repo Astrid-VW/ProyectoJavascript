@@ -1,4 +1,4 @@
-export const comprobarQueTengasLaLetras = (letra, palabra) =>{
+export const checkCoincidences = (letra, palabra) =>{
     console.log("palabra en la funcion buscar", palabra)
 
     // letra es la a --->
